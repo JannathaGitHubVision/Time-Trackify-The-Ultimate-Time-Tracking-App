@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:background="#f8f8f8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/card_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/rounded_background"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/userPhoto"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="27dp" />
+
+            <TextView
+                android:id="@+id/projectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/userPhoto"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Project Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginEnd="16dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/projectCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Project Category: "
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:padding="8dp"
+            android:background="@drawable/rounded_background" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Project Description: "
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:padding="8dp"
+            android:background="@drawable/rounded_background" />
+
+        <TextView
+            android:id="@+id/hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Working Hours (Min - Max): "
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:padding="8dp"
+            android:background="@drawable/rounded_background" />
+
+        <TextView
+            android:id="@+id/projectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Project Start Date: "
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:padding="8dp"
+            android:background="@drawable/rounded_background" />
+
+        <Button
+            android:id="@+id/currentMonthButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Current Month" />
+
+        <Button
+            android:id="@+id/previousMonthButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Previous Month" />
+
+        <com.anychart.AnyChartView
+            android:id="@+id/any_chart_view"
+            android:layout_width="match_parent"
+            android:layout_height="466dp" />
+
+    </LinearLayout>
+</ScrollView>
+
